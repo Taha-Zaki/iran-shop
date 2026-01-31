@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tahoma', 'Vazir', sans-serif;
+    background: #f9f5f0;
+    color: #3d2b1f;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #8d5524, #c68642);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav a.cart-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background: rgba(255,255,255,0.25);
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+nav a.cart-link:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+.cart-count {
+    background: #d32f2f;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.8rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.8rem;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding: 1.2rem;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+}
+
+.product-img-placeholder {
+    height: 180px;
+    background: #f0e4d7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: #8d5524;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.price {
+    font-size: 1.3rem;
+    color: #c2185b;
+    margin: 0.8rem 0;
+    font-weight: bold;
+}
+
+.btn-add {
+    background: #388e3c;
+    color: white;
+    border: none;
+    padding: 0.9rem 1.8rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-add:hover {
+    background: #2e7d32;
+}
+
+.success-msg {
+    background: #c8e6c9;
+    color: #1b5e20;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 500px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #3d2b1f;
+    color: #fff;
+    margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .product-grid { grid-template-columns: 1fr; }
+}
