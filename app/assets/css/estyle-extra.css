@@ -1,0 +1,135 @@
+
+.checkout-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.checkout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;          
+    gap: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .checkout-grid {
+        grid-template-columns: 1fr;          
+    }
+    .order-summary {
+        order: -1;                           
+    }
+}
+
+.checkout-form-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.checkout-form-section h2 {
+    color: #5d4037;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #8d6e63;
+    padding-bottom: 0.8rem;
+}
+
+.form-group {
+    margin-bottom: 1.6rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+    color: #4a2c1f;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid #d7ccc8;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #faf8f5;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #8d6e63;
+    box-shadow: 0 0 0 3px rgba(141,110,99,0.15);
+}
+
+.btn-submit {
+    width: 100%;
+    background: linear-gradient(135deg, #388e3c, #2e7d32);
+    color: white;
+    border: none;
+    padding: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 1.5rem;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(46,125,50,0.3);
+}
+
+.order-summary {
+    background: #f5f0e9;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.order-summary h2 {
+    color: #5d4037;
+    margin-bottom: 1.2rem;
+}
+
+.summary-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.summary-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px dashed #d7ccc8;
+    color: #4a2c1f;
+}
+
+.summary-list li:last-child {
+    border-bottom: none;
+}
+
+.total-box {
+    background: #8d6e63;
+    color: white;
+    padding: 1.2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.btn-back {
+    display: inline-block;
+    margin: 1rem 0;
+    color: #388e3c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    text-decoration: underline;
+}

@@ -1,3 +1,19 @@
+// Welcome prompt - show only once per browser tab using sessionStorage
+window.addEventListener('load', () => {
+    try {
+        if (!sessionStorage.getItem('welcomeShown')) {
+            alert('به فروشگاه محصولات ایرانی خوش آمدید!');
+            const ok = confirm('مایل به مشاهده محصولات هستید؟');
+            sessionStorage.setItem('welcomeShown', '1');
+            if (!ok) {
+                alert('خوشحال می‌شویم بعداً برگردید!');
+            }
+        }
+    } catch (e) {
+        // If storage is blocked, fail silently
+    }
+});
+
 function addToCart(id, name) {
     if (confirm(`آیا «${name}» به سبد خرید اضافه شود؟`)) {
         window.location.href = `index.php?add=${id}`;

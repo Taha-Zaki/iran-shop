@@ -1,0 +1,7 @@
+[package]
+name = "iran-shop"
+version = "0.1.0"
+description = "Iran Shop PHP app on Wasmer"
+
+[commands]
+start = "php -t app -S 0.0.0.0:$PORT"

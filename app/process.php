@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/inc/bootstrap.php';
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name    = $_POST['name']    ?? 'نامشخص';
     $address = $_POST['address'] ?? '';
